@@ -191,6 +191,7 @@ void OnDataRecv(const uint8_t *mac, const uint8_t *incomingData, int len) {
     Serial.println(len);
     Serial.print("Int: ");
     Serial.println(espNowData.a);
+    highscore = espNowData.a;
 }
 
 void setup() {
